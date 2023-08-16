@@ -1,0 +1,107 @@
+
+* {
+    margin: 0px;
+    padding: 0px;  
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+#star-icon{
+    position: absolute;
+    top: 11%;
+    margin-left: 2em;
+    background-color: #212830;
+    border-radius: 50%;
+    width: 2.5em;
+    
+   
+}
+#principal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:hsla(208, 19%, 15%, 0.568);
+    color: white;
+    height: 390px;
+    width: 330px;
+    border-radius: 20px;
+    
+}
+#header{
+    position: relative;
+    top: 28%;
+    margin-left: 2em;
+    
+}
+#main {
+    position: relative;
+    top: 32%;
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.452);
+}
+#button{
+    position: relative;
+    top: 44%;
+    width: 70.3vw;
+    border-radius: 40px;
+    padding: 15px;
+    margin-left: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: white;
+    border: none;
+    box-shadow: 4px 7px 18px black;
+}
+
+
+
+#principal > #aval {
+    position: relative;
+    top: 38%;
+    letter-spacing: 20px;
+    text-align: center;
+   
+}
+
+#aval input {
+    display: inline-flex;
+    align-items: center; 
+}
+#aval input[type="radio"] {
+    content: "1";
+  }
+
+#aval label {
+    padding: px;
+    position: relative;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #20262e;
+    border-radius: 50%;
+    margin: 0 px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    
+} 
+#aval label:hover {
+    background-color: #ccc;
+  }
+#aval input[type="radio"]:checked + label {
+    background-color:hsl(25, 97%, 53%);
+  }
+
+/*#aval input + label::before {
+    content: "";
+    background-color: #212830;
+    border-radius: 50%;
+    
+}
+

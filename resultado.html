@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <link rel="stylesheet" href="style-2.css">
+    <script src="script.js"></script>
+</head>
+<div id="principal-2">
+ 
+    <header id="header-1">
+        <img src="images/illustration-thank-you.svg" alt="">
+    </header>
+     <main>
+        <p id="message"></p>
+     </main> 
+     
+     <aside id="aside-1">
+        <p>
+            <h2>Thank You!</h2>
+        </p> 
+     </aside>
+    <footer id="footer">
+        <h6>We appreciate you taking the time to give a rating. If you ever need more support, 
+            don’t hesitate to get in touch!</h6>
+    </footer>
+</div>
+<script>
+    window.onload = function() {
+      var rating = getRatingFromURL();
+      displayMessage(rating);
+    };
+  
+    function getRatingFromURL() {
+      var urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get("rating");
+    }
+  
+    function displayMessage(rating) {
+      var message = document.getElementById("message");
+      message.textContent = `You selected ${rating} of 5` ;
+    }
+  </script>
+</body>
+</html>

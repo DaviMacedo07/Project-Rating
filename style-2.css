@@ -1,0 +1,56 @@
+* {
+    margin: 0px;
+    padding: 0px;  
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Overpass', sans-serif;
+    background-color: hsl(216, 12%, 8%);
+}
+#header-1{
+    position: absolute;
+    top: 10%;
+    margin-left: 4.5em;    
+}
+#principal-2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:hsla(208, 19%, 15%, 0.568);
+    color: white;
+    height: 390px;
+    width: 330px;
+    border-radius: 20px;
+    
+}
+
+#message {
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    padding: 1em;
+    background-color: hsla(0, 0%, 0%, 0.568);
+    color: hsl(25, 100%, 61%);
+    border-radius: 20px;
+}
+#aside-1 > h2{
+    position: absolute;
+    top: 65%;
+    text-align: center;
+    color: whitesmoke;
+    left: 26%;
+    font-size: xx-large;
+}
+#footer{
+    position: absolute;
+    top: 72%;
+    text-align: center;
+    font-size: medium;
+    letter-spacing: 0.5px;
+    margin: 20px;
+    color: gray;
+    padding: 8px;
+    font-size: 1.2em;
+}
